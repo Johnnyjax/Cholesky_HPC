@@ -1,0 +1,93 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'jonny' on host 'laptop-ofsepo5t' (Windows NT_amd64 version 6.2) on Thu Apr 10 11:05:09 -0500 2025
+INFO: [HLS 200-10] In directory 'C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/csynth.tcl
+INFO: [HLS 200-1510] Running: open_project Cholesky 
+INFO: [HLS 200-10] Opening project 'C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky'.
+INFO: [HLS 200-1510] Running: set_top cholesky 
+INFO: [HLS 200-1510] Running: add_files cholesky_hls.cpp 
+INFO: [HLS 200-10] Adding design file 'cholesky_hls.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb test_cholesky.cpp 
+INFO: [HLS 200-10] Adding test bench file 'test_cholesky.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.159 seconds; current allocated memory: 193.422 MB.
+INFO: [HLS 200-10] Analyzing design file 'cholesky_hls.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.499 seconds; current allocated memory: 195.453 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 74 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 66 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 47 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 47 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 47 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 48 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 47 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 57 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 67 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/Cholesky/Cholesky/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_10_3' is marked as complete unroll implied by the pipeline pragma (cholesky_hls.cpp:10:30)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.899 seconds; current allocated memory: 197.406 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 197.406 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 202.383 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 203.617 MB.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_7_2' (cholesky_hls.cpp:7) in function 'cholesky' for pipelining.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_10_3' (cholesky_hls.cpp:10) in function 'cholesky': cannot completely unroll a loop with a variable trip count.
+Resolution: For help on HLS 200-936 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-936.html
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.106 seconds; current allocated memory: 225.301 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_6_1' (cholesky_hls.cpp:6:18) in function 'cholesky' the outer loop is not a perfect loop because either the parent loop or the sub loop has no invariant trip count.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 225.305 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cholesky' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cholesky' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_7_2': contains subloop(s) that are not unrolled or flattened.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 225.305 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 226.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cholesky' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'cholesky/A' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cholesky/L' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'cholesky' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_59_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_57_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cholesky'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.327 seconds; current allocated memory: 230.035 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.728 seconds; current allocated memory: 236.156 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.16 seconds; current allocated memory: 241.172 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cholesky.
+INFO: [VLOG 209-307] Generating Verilog RTL for cholesky.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.04 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 13.627 seconds; current allocated memory: 47.898 MB.
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 3 seconds. Total elapsed time: 18.126 seconds; peak allocated memory: 241.344 MB.
