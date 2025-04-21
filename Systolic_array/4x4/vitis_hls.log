@@ -1,0 +1,61 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'jonny' on host 'laptop-ofsepo5t' (Windows NT_amd64 version 6.2) on Thu Apr 17 13:37:22 -0500 2025
+INFO: [HLS 200-10] In directory 'C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/HLS_designs/Cholesky/cholesky_v1.3/design_files/4x4'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/HLS_designs/Cholesky/cholesky_v1.3/design_files/4x4/chol/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/HLS_designs/Cholesky/cholesky_v1.3/design_files/4x4/chol/solution1/csynth.tcl
+INFO: [HLS 200-1510] Running: open_project chol 
+INFO: [HLS 200-10] Opening project 'C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/HLS_designs/Cholesky/cholesky_v1.3/design_files/4x4/chol'.
+INFO: [HLS 200-1510] Running: set_top top 
+INFO: [HLS 200-1510] Running: add_files chol.h 
+INFO: [HLS 200-10] Adding design file 'chol.h' to the project
+INFO: [HLS 200-1510] Running: add_files chol.cpp 
+INFO: [HLS 200-10] Adding design file 'chol.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb chol_tb.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'chol_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/HLS_designs/Cholesky/cholesky_v1.3/design_files/4x4/chol/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./chol/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name top top 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.275 seconds; current allocated memory: 198.039 MB.
+INFO: [HLS 200-10] Analyzing design file 'chol.cpp' ... 
+ERROR: [HLS 207-3701] variable has incomplete type 'void' (chol.cpp:1:6)
+ERROR: [HLS 207-3776] use of undeclared identifier 'ap_uint' (chol.cpp:1:9)
+ERROR: [HLS 207-3776] use of undeclared identifier 'iterator_bit' (chol.cpp:1:17)
+ERROR: [HLS 207-3776] use of undeclared identifier 'id' (chol.cpp:1:31)
+ERROR: [HLS 207-3776] use of undeclared identifier 'stream' (chol.cpp:2:9)
+ERROR: [HLS 207-3776] use of undeclared identifier 'matrix_t' (chol.cpp:2:16)
+ERROR: [HLS 207-3776] use of undeclared identifier 'readin' (chol.cpp:2:27)
+ERROR: [HLS 207-3776] use of undeclared identifier 'stream' (chol.cpp:3:9)
+ERROR: [HLS 207-3776] use of undeclared identifier 'matrix_t' (chol.cpp:3:16)
+ERROR: [HLS 207-3776] use of undeclared identifier 'result' (chol.cpp:3:27)
+ERROR: [HLS 207-3776] use of undeclared identifier 'stream' (chol.cpp:4:9)
+ERROR: [HLS 207-3776] use of undeclared identifier 'matrix_t' (chol.cpp:4:16)
+ERROR: [HLS 207-3776] use of undeclared identifier 'mid' (chol.cpp:4:27)
+ERROR: [HLS 207-1263] expected ';' after top level declarator (chol.cpp:4:31)
+ERROR: [HLS 207-5512] '#pragma HLS' is only allowed in function scope (chol.cpp:6:9)
+ERROR: [HLS 207-2981] no template named 'ap_uint' (chol.cpp:8:2)
+ERROR: [HLS 207-3776] use of undeclared identifier 'iterator_bit' (chol.cpp:8:10)
+ERROR: [HLS 207-3801] unknown type name 'matrix_t' (chol.cpp:9:5)
+ERROR: [HLS 207-3776] use of undeclared identifier 'matrix_size' (chol.cpp:9:20)
+ERROR: [HLS 207-59] too many errors emitted, stopping now
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.74 seconds; current allocated memory: 1.512 MB.
+ 
+    while executing
+"source C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/HLS_designs/Cholesky/cholesky_v1.3/design_files/4x4/chol/solution1/csyn..."
+    invoked from within
+"hls::main C:/Users/jonny/Documents/Books/School_Books/EECS_700_Algorithms_for_HPC/HLS_designs/Cholesky/cholesky_v1.3/design_files/4x4/chol/solution1/c..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 3 seconds. Total elapsed time: 11.326 seconds; peak allocated memory: 199.539 MB.

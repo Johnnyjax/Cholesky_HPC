@@ -1,10 +1,15 @@
-#ifndef CHOLESKY_HLS_H
-#define CHOLESKY_HLS_H
-
-#define N 512 // Change as needed (keep small for cosim)
-
-typedef double matrix_t;
-
-void cholesky(matrix_t A[N][N], matrix_t L[N][N]);
-
-#endif
+//#ifndef _CHOLESKY_HLS_H_
+//#define _CHOLESKY_HLS_H_
+//
+//#include "hls_math.h"
+//#include "hls_stream.h"
+//
+//#define N 128
+//#define B 16
+//#define NB (N / B)
+//
+//typedef float matrix_t;
+//
+//void top(matrix_t A[NB][NB][B][B]);
+//
+//#endif
